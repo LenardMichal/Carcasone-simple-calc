@@ -9,15 +9,15 @@
     --grass: #3F681C
     
 }
-
 body{
     background-color: dimgray;
 }
 
+
 #app{
     background-color: var(--sky);
     min-width: 320px;
-    max-width: 900px;
+    
     text-align: center;
     margin: 0 auto;
     user-select: none;
@@ -39,6 +39,9 @@ body{
     border-radius: 35%;
     padding: 10px 0;
     
+}
+#players div:hover{
+    background-color: #FFDA73
 }
 
 #minus, #clear{
@@ -62,6 +65,7 @@ body{
     grid-column: 4 / 7;
 
 }
+
 .button{
     height: 20px;
     border: black solid 1px;
@@ -71,7 +75,7 @@ body{
     background-color: var(--grass);
     color:white;
     box-shadow: 2px 2px black;
-    
+   
 }
 
 
@@ -85,6 +89,12 @@ body{
 
 #controls  .button:active{
     background-color: #3E681C;
+}
+#multi .button:hover, #minus:hover, #clear:hover{
+    background-color: #FDAA96;
+}
+#multi .button:active, #minus:active, #clear:active{
+    background-color: #A33115;
 }
 #multi{
     margin-top: 5px;
@@ -129,10 +139,12 @@ body{
 }
 
 .checked{
-    background-color: rgb(217, 241, 0) !important;
+    background-color: #BF9930 !important;
 }
 
-
+#minus.checked{
+    background-color: #A33115 !important
+}
 
 
 
