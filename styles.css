@@ -2,14 +2,21 @@
     margin: 0;
     padding: 0;
 }
+:root{
+    --sky: #375E97;
+    --sunset: #FB6542;
+    --sunflower: #FFBB00;
+    --grass: #3F681C
+    
+}
 
 body{
     background-color: dimgray;
 }
 
 #app{
-    background-image: url(/assets/green_cup.png);
-    min-width: 350px;
+    background-color: var(--sky);
+    min-width: 320px;
     max-width: 900px;
     text-align: center;
     margin: 0 auto;
@@ -28,27 +35,32 @@ body{
     height: 80px;
     text-align: center;
     border: 1px inset black;
+    background-color: var(--sunflower);
+    border-radius: 35%;
+    padding: 10px 0;
     
 }
 
-#minus{
-    grid-column: 1 / 4;
-    background-color: azure;
+#minus, #clear{
+    
+    background-color: var(--sunset);
     border-radius: 10px;
     height: 40px;
     font-size: 35px;
     font-weight: 800;
     padding-top: 5px;
     box-shadow: 3px 3px black;
+    width: 90%;
+    margin: 0 auto;
+
+}
+#minus{
+    grid-column:  1 / 4;
 }
 
 #clear{
     grid-column: 4 / 7;
-    background-color: azure;
-    border-radius: 10px;
-    height: 40px;
-    font-size: 35px;
-    box-shadow: 3px 3px black;
+
 }
 .button{
     height: 20px;
@@ -56,22 +68,23 @@ body{
     border-radius: 10px;
     margin: 10px;
     padding: 5px;
-    background-color: darkgoldenrod;
+    background-color: var(--grass);
     color:white;
     box-shadow: 2px 2px black;
     
 }
-.button:hover{
-    background-color: rosybrown;
-}
+
 
 .multiButton{
-    background-color: rebeccapurple; 
+    background-color: var(--sunset); 
     box-shadow: 2px 2px black;
 }
+#controls .button:hover{
+    background-color: #8CB36B;
+} 
 
-.button:active{
-    background-color:red;
+#controls  .button:active{
+    background-color: #3E681C;
 }
 #multi{
     margin-top: 5px;
@@ -79,7 +92,7 @@ body{
 }
 
 .toggled{
-    background-color: wheat;
+    background-color: #A33115;
 }
 
 
@@ -116,7 +129,7 @@ body{
 }
 
 .checked{
-    background-color: rgba(140, 140, 140, 1) !important;
+    background-color: rgb(217, 241, 0) !important;
 }
 
 
