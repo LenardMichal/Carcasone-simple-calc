@@ -1,0 +1,125 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: dimgray;
+}
+
+#app{
+    background-image: url(/assets/green_cup.png);
+    min-width: 350px;
+    max-width: 900px;
+    text-align: center;
+    margin: 0 auto;
+    user-select: none;
+
+
+}
+
+#players, #controls, #multi{
+    
+    display: grid;
+    grid-template-columns: repeat(6, auto);
+}
+
+#players div{
+    height: 80px;
+    text-align: center;
+    border: 1px inset black;
+    
+}
+
+#minus{
+    grid-column: 1 / 4;
+    background-color: azure;
+    border-radius: 10px;
+    height: 40px;
+    font-size: 35px;
+    font-weight: 800;
+    padding-top: 5px;
+    box-shadow: 3px 3px black;
+}
+
+#clear{
+    grid-column: 4 / 7;
+    background-color: azure;
+    border-radius: 10px;
+    height: 40px;
+    font-size: 35px;
+    box-shadow: 3px 3px black;
+}
+.button{
+    height: 20px;
+    border: black solid 1px;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 5px;
+    background-color: darkgoldenrod;
+    color:white;
+    box-shadow: 2px 2px black;
+    
+}
+.button:hover{
+    background-color: rosybrown;
+}
+
+.multiButton{
+    background-color: rebeccapurple; 
+    box-shadow: 2px 2px black;
+}
+
+.button:active{
+    background-color:red;
+}
+#multi{
+    margin-top: 5px;
+    border-top: 1px solid black
+}
+
+.toggled{
+    background-color: wheat;
+}
+
+
+#red{
+    background-image: url(/assets/redStar.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#pink{
+    background-image: url(/assets/pinkStar.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#yellow{
+    background-image: url(/assets/yellowStar.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#green{
+    background-image: url(/assets/greenStar.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#blue{
+ background-image: url(/assets/blueStar.svg);
+    background-repeat: no-repeat;
+    background-position: center;;
+}
+#black{
+    background-image: url(/assets/blackStar.svg);
+    background-repeat: no-repeat;
+    background-position: center;;
+}
+
+.checked{
+    background-color: rgba(140, 140, 140, 1) !important;
+}
+
+
+
+
+
